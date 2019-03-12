@@ -2,6 +2,6 @@
 Add-project-description-here | Voyage-8 | https://chingu.io/
 
 > **Tier 1 Projects**
-> -Tribute Page
-> -Survey Form
-> -Personal Portfolio Webpage
+> - Tribute Page
+> - Survey Form
+> - Personal Portfolio Webpage
