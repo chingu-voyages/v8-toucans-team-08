@@ -5,3 +5,5 @@ Add-project-description-here | Voyage-8 | https://chingu.io/
 > - Tribute Page
 > - Survey Form
 > - Personal Portfolio Webpage
+
+Trello Boards are being created for this team with specific task details soon.
