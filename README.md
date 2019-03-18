@@ -6,4 +6,5 @@ Add-project-description-here | Voyage-8 | https://chingu.io/
 > - Survey Form
 > - Personal Portfolio Webpage
 
-Trello Boards are being created for this team with specific task details soon.
+Trello Boards are finally in, still working on it.
+https://trello.com/toucans8/home
