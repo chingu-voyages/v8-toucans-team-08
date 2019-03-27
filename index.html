@@ -1,34 +1,141 @@
-!DOCTYPE html
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Toucans-8 Web Solutions</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>LANDING PAGE </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/page.css">
     </head>
 
+
     <body>
-        <!-- Navbar -->
-        <div class="w3-top">
-         <div class="w3-bar w3-theme-d2 w3-left-align">
-          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-          <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-          <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-          <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-          <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-           
-          <!-- Navbar on small screens -->
-          <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team" class="w3-bar-item w3-button">Team</a>
-            <a href="#work" class="w3-bar-item w3-button">Work</a>
-            <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-            <a href="#" class="w3-bar-item w3-button">Search</a>
-          </div>
+        <!-- Nav Bar -->
+        <nav id="nav-bar" class="navbar navbar-expand-sm navbar-toggleable-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Toucans</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+         
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">       
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">   <a href="#team" class="nav-link">Team</a> </li> 
+                <li class="nav-item">   <a href="#work" class="nav-link">Work</a> </li> 
+                <li class="nav-item">   <a href="#pricing" class="nav-link">Price</a> </li> 
+                <li class="nav-item">   <a href="#contact" class="nav-link">Contact</a> </li> 
+                <li class="nav-item dropdown">   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a> 
+                    <ul class="dropdown-menu">
+                   <li class="nav-item"> <a class="dropdown-item " href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="dropdown-item " href="#">Link 2</a>  </li>        </ul>  </li> 
+                <li class="nav-item">   <a href="#" class="nav-link">Search</a> </li> 
+
+
+
+            </ul>
         </div>
+
+        </nav>
+        <!-- Jumbo Header -->
+        <div class="container what">
+            <div class="row">
+                <header class="jumbotron" id="header">
+                    <img src="" id="header-img" class="">
+
+                </header>
+            </div>
+        </div>
+        <!-- Team -->
+        <div class="container text-center" id="team">
+            <h2>OUR TEAM</h2><br>
+            <p>Meet the team - Our office rats:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/placeholder.jpg"  class="rounded-circle">
+                    <h3>Johnny Single</h3>
+                    <p>Web Designer</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/placeholder.jpg"  class="rounded-circle">
+                    <h3>Wanze Nwosu</h3>
+                    <p>Web Designer</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Work -->
+        <div class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 our-work"><h2>Our Work</h2><br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                          but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                           popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of
+                             Lorem Ipsum. </p>
+                </div>
+                <div class="col-md-3">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="img/placeholder.jpg" class="bd-placeholder-img card-img-top">
+                            <div class="card-body">
+                                <p class="card-text"><h4>Customer 1</h4>
+                                <section>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                         of type and scrambled it to make a type specimen book. </section></p>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-md-3">
+                        <div class="card mb-4 shadow-sm">
+                                <img src="img/placeholder.jpg" class="bd-placeholder-img card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text"><h4>Customer 2</h4>
+                                    <section>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                     of type and scrambled it to make a type specimen book. </section></p>
+                                </div>
+                        </div>
+
+                </div>
+                <div class="col-md-3">
+                        <div class="card mb-4 shadow-sm">
+                                <img src="img/placeholder.jpg" class="bd-placeholder-img card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text"><h4>Customer 3</h4>
+                                    <section>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                             of type and scrambled it to make a type specimen book. </section></p>
+                                </div>
+                        </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- Pricing -->
+
+
+
+
+
+        <!-- Contact Us-->
+
+
+
+
+
+
+        <!-- Footer -->
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
 </html>
