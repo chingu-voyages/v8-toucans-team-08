@@ -8,3 +8,18 @@
 .our-work{
     color: white;
 }
+.planner{
+    color: white;
+    background-color: black;
+}
+.plan{
+    color: white;
+    background-color: rgb(48, 46, 46);
+}
+.btn{
+    color: white;
+    background-color: rgb(24, 139, 114);
+}
+.shade{
+    background-color: rgba(49, 46, 46, 0.11)
+}
