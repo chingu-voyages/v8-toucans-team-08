@@ -7,44 +7,42 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/page.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
 
-    <body>
+    <body id="mypage">
         <!-- Nav Bar -->
-        <nav id="nav-bar" class="navbar navbar-expand-sm navbar-toggleable-md navbar-light bg-light">
-            <a class="navbar-brand" href="#">Toucans</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-         
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">       
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">   <a href="#team" class="nav-link">Team</a> </li> 
-                <li class="nav-item">   <a href="#work" class="nav-link">Work</a> </li> 
-                <li class="nav-item">   <a href="#pricing" class="nav-link">Price</a> </li> 
-                <li class="nav-item">   <a href="#contact" class="nav-link">Contact</a> </li> 
-                <li class="nav-item dropdown">   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a> 
-                    <ul class="dropdown-menu">
-                   <li class="nav-item"> <a class="dropdown-item " href="#">Link 1</a></li>
-                    <li class="nav-item"><a class="dropdown-item " href="#">Link 2</a>  </li>        </ul>  </li> 
-                <li class="nav-item">   <a href="#" class="nav-link">Search</a> </li> 
-
-
-
-            </ul>
+             <!-- Navbar -->
+        <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Toucans 8</a>
+        <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Toucans 8</a>
+        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
         </div>
 
-        </nav>
-        <!-- Jumbo Header -->
-        <div class="container what">
-            <div class="row">
-                <header class="jumbotron" id="header">
-                    <img src="" id="header-img" class="">
-
-                </header>
-            </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Toucans 8</a>
+            <a href="#work" class="w3-bar-item w3-button">Work</a>
+            <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
+        </div>
+        <!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="assets/img/13.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Toucans 8</button>
+  </div>
+</div>
+
         <!-- Team -->
         <div class="container text-center" id="team">
             <h2>OUR TEAM</h2><br>
@@ -69,7 +67,7 @@
             </div>
         </div>
         <!-- Work -->
-        <div class="work">
+        <div class="work" id="work">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 our-work"><h2>Our Work</h2><br>
@@ -122,7 +120,7 @@
         </div>
         </div>
         <!-- Pricing -->
-        <div class="container text-center">
+        <div class="container text-center" id="pricing">
             <h2> PRICING </h2><br>
             <p>Choose a pricing plan that fits your needs.</p>
             <div class="row">
@@ -231,11 +229,15 @@
 
             </div>
 
-
+        </div>
         </div>
 
         <!-- Contact Us-->
+        
+<div id="contact">
 
+
+</div>
 
 
 
