@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .what{
     background-image: url("");
 }
@@ -28,4 +32,32 @@
     position: center;
     text-align: center;
     text-decoration-style: italic;
+}
+
+.list-group:hover{
+    box-shadow: 0.3px 0.2px 5px black;
+    transition: 0.4s;
+}
+
+.lrg{
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.light{
+    color: #716f6f;
+}
+
+.rounded-circle {
+    height: auto;
+    max-width: 70%;
+}
+
+.card-img-top{
+    width: auto;
+    height: 168.88px;
+}
+
+.card-body{
+    padding-top: 0 !important;
 }
