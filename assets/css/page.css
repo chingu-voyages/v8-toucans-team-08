@@ -34,14 +34,19 @@ html {
     text-decoration-style: italic;
 }
 
-.list-group:hover{
-    box-shadow: 0.3px 0.2px 5px black;
+.list-group:first-child:hover{
+    box-shadow: 0.3px 0.2px 10px black;
     transition: 0.4s;
 }
 
 .lrg{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 100;
+}
+
+.container {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
 }
 
 .light{
@@ -63,6 +68,59 @@ html {
 
 .resize-3{
     width: auto;
-    height: 6.5em;
+    height: 6.5rem;
 }
 
+.align-txt{
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+}
+
+.txt-2{
+    word-spacing: -2.5px;
+}
+
+/* Contact section */
+
+#contact{
+    background-color: #F0F0F0;
+}
+
+.contact-list{
+    display: block;
+    padding: .75rem 0;
+}
+
+.info{
+    margin-bottom: 2rem;
+}
+
+.contact-head {
+    border-bottom: 6px solid #009688;
+    font-size: 2rem;
+}
+
+.contact-icon {
+    color: #009688;
+    font-size: x-large;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    float: right;
+}
+
+.submit-btn:hover {
+    background: rgb(194, 194, 194);
+    color: black;
+    border-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.white-container{
+    background: white;
+}
