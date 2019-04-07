@@ -103,7 +103,6 @@ html {
 
 .contact-icon {
     color: #009688;
-    font-size: x-large;
 }
 
 .submit-btn {
@@ -127,4 +126,8 @@ html {
 
 .footer-img {
     width: 100%;
+}
+
+.fa.contact-icon {
+    font-size: x-large;
 }
