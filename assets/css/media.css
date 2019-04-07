@@ -1,0 +1,11 @@
+/* Media queries for mobile view:
+if you know a better alternative for these please transfer these to improved code */
+
+@media screen and (max-width: 767px){
+    .card-img-top {
+        height: auto;
+        width: 60%;
+        display: flex;
+        align-self: center;
+    }
+}

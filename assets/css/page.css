@@ -53,11 +53,16 @@ html {
     max-width: 70%;
 }
 
-.card-img-top{
-    width: auto;
-    height: 168.88px;
+.resize{
+    padding-top: 10px;
 }
 
-.card-body{
-    padding-top: 0 !important;
+.resize-2{
+    padding-bottom: 5px;
 }
+
+.resize-3{
+    width: auto;
+    height: 6.5em;
+}
+
