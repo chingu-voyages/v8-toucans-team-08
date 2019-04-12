@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
 
 </head>
 
@@ -40,7 +41,12 @@
         </div>
     </div>
     <!-- Image Header -->
-    <div class="w3-display-container w3-animate-opacity">
+    <div class="w3-display-container w3-animate-opacity"
+        data-sal-duration="1200" 
+        data-sal="fade" 
+        data-sal-delay="300" 
+        data-sal-easing="ease-out-bounce"
+    >
         <img src="assets/img/13.jpg" class="header-logo fade-in" alt="boat"
             style="width:100%;min-height:350px;max-height:600px;">
         <div class="w3-container w3-display-bottomleft w3-margin-bottom">
@@ -48,11 +54,16 @@
                 class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Toucans 8</button>
         </div>
     </div>
-    <div id="brief">
-        <p>We're a team of code sharks spitting up codes to solve your business needs</p>
-    </div>
+    <!-- <div id="brief">
+        <p>We're a team of code sharks spitting up codes to solve your business needs</p>   
+    </div> -->
     <!-- Team -->
-    <div class="container text-center" id="team">
+    <div class="container text-center" id="team" 
+        data-sal-duration="1800" 
+        data-sal="slide-up" 
+        data-sal-delay="400" 
+        data-sal-easing="ease-out-bounce"
+    >
         <h2>OUR TEAM</h2><br>
         <p>Meet the team - Code Magic</p>
         <div class="row">
@@ -90,8 +101,8 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <h4><strong>Kiwano Inc</strong></h4>
-                                <section class="align-txt">As a new startup, we needed to outsource most of our web components.We had a few companies, but none
-                                    met our satisfaction.Just a year ago, we came across Toucans 8, and our story from there is an open book. Everyone can testify
+                                <section class="align-txt">As a new startup, we needed to outsource most of our web components. We had a few companies, but none
+                                    met our satisfaction. Just a year ago, we came across Toucans 8, and our story from there is an open book. Everyone can testify
                                     of the successes we've chalked since then. Honestly, we owe it all to Toucans 8 Web Solutions. </section>
                             </p>
                         </div>
@@ -103,8 +114,7 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <h4><strong>Company Name I/O</strong></h4>
-                                <section class="align-txt">As a business that deals with Company name registration and all other issues relating to Brands and identity
-                                    , it is imperative that we use trusted 3rd Party services. No other company provides Web Solutions better than Toucans 8. They've helped
+                                <section class="align-txt">As a business that deals with Company name registration and all other issues relating to Brands and identity, it is imperative that we use trusted 3rd Party services. No other company provides Web Solutions better than Toucans 8. They've helped
                                     us stabilize our internet presence and increased our productivity. 
                                 </section>
                             </p>
@@ -131,7 +141,12 @@
         </div>
     </div>
     <!-- Pricing -->
-    <div class="container text-center" id="pricing">
+    <div class="container text-center" id="pricing"
+        data-sal-duration="1800" 
+        data-sal="slide-up" 
+        data-sal-delay="400" 
+        data-sal-easing="ease-out-bounce"
+    >
         <h2> PRICING </h2><br>
         <p>Choose a pricing plan that fits your needs.</p>
         <div class="row">
@@ -248,7 +263,12 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5"
+                    data-sal-duration="1200" 
+                    data-sal="slide-right" 
+                    data-sal-delay="200" 
+                    data-sal-easing="ease-out-bounce"
+                >
                     <div class="info">
                         <span class="contact-head">
                             Contact Us
@@ -271,7 +291,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-7 white-container">
+                <div class="col-md-7 white-container"
+                    data-sal-duration="1200" 
+                    data-sal="slide-left" 
+                    data-sal-delay="200" 
+                    data-sal-easing="ease-out-bounce"
+                >
                     <form action="/placeholder-page.html">
                         <div class="input-block">
                             <label>Name</label>
@@ -294,8 +319,34 @@
     <img src="assets/img/footer-img.jpeg" class="footer-img fade-in" alt="Location">
 
     <!-- Footer -->
-
-
+    
+    <div id="footer" class="footer-bk">
+        <div class="container"
+            data-sal-duration="1200" 
+            data-sal="slide-down" 
+            data-sal-delay="300" 
+            data-sal-easing="ease-out-bounce"
+        >
+            <h4>Follow Us</h4>
+            <a href="#mypage" class="footer-links">
+                <i class="fa fa-icon" aria-hidden="true">&#xf09a;</i>
+            </a>
+            <a href="#mypage" class="footer-links">
+                <i class="fa fa-icon" aria-hidden="true">&#xf099;</i>
+            </a>
+            <a href="#mypage" class="footer-links">
+                <i class="fa fa-icon" aria-hidden="true">&#xf0d5;</i>
+            </a>
+            <a href="#mypage" class="footer-links">
+                <i class="fa fa-icon" aria-hidden="true">&#xf16d;</i>
+            </a>
+            <a href="#mypage" class="footer-links">
+                <i class="fa fa-icon">&#xf0e1;</i>
+            </a>
+            <p class="footer-txt"><a href="https://github.com/chingu-voyages/v8-toucans-team-08" target="_blank" class="a-txt">Check out</a> our Github journey</p>
+        </div>
+    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -307,6 +358,17 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="/assets/js/page.js"></script>
+
+    <!-- sal.js -->
+
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+
+    <script>
+        sal({
+            threshold: 0.4,
+            once: false,
+        });
+    </script>
 
 </body>
 

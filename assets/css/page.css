@@ -144,6 +144,57 @@ input.input-text {
     border-bottom: 1px solid rgb(145, 145, 145);
 }
 
+/* Footer */
+
+.footer-links {
+    background-color: #009688;
+    padding: 0.6rem 0.8rem;
+    margin-right: 0.5rem;
+    font-size: large;
+}
+
+/* Need to come back to this, want to make icon change dark when item tag is in hover state */
+
+.footer-links:hover {
+    background-color: #aaa9a9;
+    transition: 0.3s;
+    color: #0e0e0e;
+}
+
+.fa-icon {
+    color: #F0F0F0;
+}
+
+.fa-icon:hover{
+    color: #0e0e0e;
+    text-decoration: none;
+}
+
+.footer-bk {
+    background-color: #080808; 
+    display: flex;
+    text-align: center;
+}
+
+.footer-bk h4 {
+    color: #F0F0F0;
+    margin-bottom: 1.8rem;
+    
+}
+
+.footer-txt {
+    color: #F0F0F0;
+    margin-top: 1.8rem;
+}
+
+.a-txt {
+    text-decoration: underline;
+}
+
+.footer-txt a:hover {
+    color: #F0F0F0;
+}
+
 /* Animation for JS file - In progress */
 
 /* .fade-in {
