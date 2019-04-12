@@ -144,7 +144,20 @@ input.input-text {
     border-bottom: 1px solid rgb(145, 145, 145);
 }
 
+<<<<<<< HEAD
 /* Footer */
+=======
+#myBtn{
+    background-color: rgb(145, 145, 145);
+    color: rgb(255,255,255);
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+/* Animation for JS file - In progress */
+>>>>>>> edd2376804cc4af484edda503bb11bca9d164d6f
 
 .footer-links {
     background-color: #009688;
