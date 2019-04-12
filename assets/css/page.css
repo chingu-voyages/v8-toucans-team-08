@@ -193,10 +193,15 @@ input.input-text {
 
 .footer-txt a:hover {
     color: #F0F0F0;
-}
 
-/* Animation for JS file - In progress */
+/* Footer */
 
-/* .fade-in {
-    transition: .5s;
+/* #myBtn{
+    background-color: rgb(145, 145, 145);
+    color: rgb(255,255,255);
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
 } */
+
