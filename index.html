@@ -294,6 +294,24 @@
     <img src="assets/img/footer-img.jpeg" class="footer-img fade-in" alt="Location">
 
     <!-- Footer -->
+    <footer class="text-center container">
+        <h5> Follow Us</h5>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+        <a href="javascript:void(0)" class="col-md-3" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="javascript:void(0)" class="col-md-3" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="javascript:void(0)" class="col-md-3" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a href="javascript:void(0)" class="col-md-3" title="Instagram"><i class="fa fa-instagram"></i></a>
+
+        </div>
+        <div class="col-md-4"></div>
+        </div>
+
+
+    </footer>
+
+    <button onclick="moveToTheTop()" id="myBtn" title="Go to top">Top</button>
 
 
 
@@ -307,6 +325,27 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="/assets/js/page.js"></script>
+    <script>
+        
+
+        window.onscroll = () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function moveToTheTop(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+
+
+    </script>
+
 
 </body>
 
