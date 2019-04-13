@@ -61,7 +61,7 @@
     <div class="container text-center" id="team" 
         data-sal-duration="1800" 
         data-sal="slide-up" 
-        data-sal-delay="400" 
+        data-sal-delay="300" 
         data-sal-easing="ease-out-bounce"
     >
         <h2>OUR TEAM</h2><br>
@@ -144,7 +144,7 @@
     <div class="container text-center" id="pricing"
         data-sal-duration="1800" 
         data-sal="slide-up" 
-        data-sal-delay="400" 
+        data-sal-delay="200" 
         data-sal-easing="ease-out-bounce"
     >
         <h2> PRICING </h2><br>
@@ -324,49 +324,32 @@
         <div class="container"
             data-sal-duration="1200" 
             data-sal="slide-down" 
-            data-sal-delay="300" 
+            data-sal-delay="200" 
             data-sal-easing="ease-out-bounce"
         >
             <h4>Follow Us</h4>
-            <a href="#mypage" class="footer-links">
+            <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon" aria-hidden="true">&#xf09a;</i>
             </a>
-            <a href="#mypage" class="footer-links">
+            <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon" aria-hidden="true">&#xf099;</i>
             </a>
-            <a href="#mypage" class="footer-links">
+            <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon" aria-hidden="true">&#xf0d5;</i>
             </a>
-            <a href="#mypage" class="footer-links">
+            <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon" aria-hidden="true">&#xf16d;</i>
             </a>
-            <a href="#mypage" class="footer-links">
+            <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon">&#xf0e1;</i>
             </a>
             <p class="footer-txt"><a href="https://github.com/chingu-voyages/v8-toucans-team-08" target="_blank" class="a-txt">Check out</a> our Github journey</p>
         </div>
     </div>
-    
-    <!-- Duplicate code - for review -->
-    
-    <!-- <footer class="text-center container">
-        <h5> Follow Us</h5>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-        <a href="javascript:void(0)" class="col-md-3" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a href="javascript:void(0)" class="col-md-3" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="javascript:void(0)" class="col-md-3" title="Google +"><i class="fa fa-google-plus"></i></a>
-        <a href="javascript:void(0)" class="col-md-3" title="Instagram"><i class="fa fa-instagram"></i></a>
 
-        </div>
-        <div class="col-md-4"></div>
-        </div>
-
-
-    </footer> -->
-
-    <button onclick="moveToTheTop()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="moveToTheTop()" id="myBtn" class="hvr-icon-float hvr-icon" title="Go to top">Top
+        <i class="fa hvr-icon-float hvr-icon">&#xf0aa;</i>
+    </button>
 
 
 
@@ -381,8 +364,6 @@
         crossorigin="anonymous"></script>
     <script src="/assets/js/page.js"></script>
     <script>
-        
-
         window.onscroll = () => {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("myBtn").style.display = "block";
@@ -395,12 +376,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
-
-
-
     </script>
-
 
     <!-- sal.js -->
 
@@ -408,7 +384,7 @@
 
     <script>
         sal({
-            threshold: 0.4,
+            threshold: 0.3,
             once: false,
         });
     </script>
