@@ -112,13 +112,6 @@ html {
     float: right;
 }
 
-/* .submit-btn:hover {
-    background: rgb(194, 194, 194);
-    color: black;
-    border-color: rgb(194, 194, 194);
-    cursor: pointer;
-} */
-
 .white-container{
     background: white;
     padding: 2rem;
@@ -159,7 +152,6 @@ input.input-text {
 .footer-links:hover {
     background-color: #aaa9a9;
     transition: 0.3s;
-    color: #0e0e0e;
 }
 
 .fa-icon {
@@ -167,7 +159,6 @@ input.input-text {
 }
 
 .fa-icon:hover{
-    color: #0e0e0e;
     text-decoration: none;
 }
 
