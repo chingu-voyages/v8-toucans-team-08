@@ -17,9 +17,10 @@ nav {
 }
 
 nav.black {
-    background: rgb(214, 214, 214);
+    background: #dbdbdb;
     height: 80px;
-    padding: 10px 50px;
+    padding: 5px 50px;
+    z-index: 1;
 }
 
 nav .logo {
@@ -59,7 +60,7 @@ nav ul li a {
 
 nav.black ul li a {
     color: rgb(37, 37, 37);
-    line-height: 60px;
+    line-height: 20px;
 } 
 
 nav ul li a.active,
