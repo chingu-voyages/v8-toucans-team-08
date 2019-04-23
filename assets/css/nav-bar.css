@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s; 
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+nav.black {
+    background: rgb(214, 214, 214);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav .logo {
+    float: left;
+
+}
+
+nav .logo img {
+    height: 80px;
+    transition: .5s;    
+}
+
+nav.black .logo img {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 20px;
+    color: rgb(37, 37, 37);
+    padding: 20px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+nav.black ul li a {
+    color: rgb(37, 37, 37);
+    line-height: 60px;
+} 
+
+nav ul li a.active,
+nav ul li a:hover
+{
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+} 
+
+section.landing-img {
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/img/nav-logo.jpeg);
+    background-size: cover;
+}
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/img/nav-logo.jpeg);
+    background-size: cover;
+}
+
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(241, 241, 241, 0.733);
+    overflow: hidden;
+    color: rgb(29, 29, 29);
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: black;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-size: 20px;
+} */
+
+.menu-icon {
+    width: 100%;
+    background: black;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    color: aliceblue;
+    display: none;
+} 
+
+@media(max-width: 580px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav ul li a {
+        color: aliceblue;
+    }
+}

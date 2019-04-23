@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/page.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <link rel="stylesheet" href="assets/css/button-animations.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
     <link rel="stylesheet" href="assets/css/about-us.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -20,46 +21,59 @@
 
 </head>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<script src="/assets/js/page.js"></script>
+
 
 <body id="mypage">
-    <!-- Nav Bar -->
     <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-theme-d2 w3-left-align">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Toucans 8</a>
-            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white hvr-underline-from-center">Team</a>
-            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white hvr-underline-from-center">Work</a>
-            <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white hvr-underline-from-center">Price</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white hvr-underline-from-center">Contact</a>
-        </div>
+    <nav>
+            <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+            <div class="logo">
+                <img src="assets/img/toucan-logo.png" alt="Toucans 8">
+            </div>
+            <ul>
+                <li class="active"><a href="#" class="hvr-underline-from-center">Toucans 8</a></li>
+                <li><a href="#team" class="hvr-underline-from-center">Team</a></li>
+                <li><a href="#work" class="hvr-underline-from-center">Work</a></li>
+                <li><a href="#pricing" class="hvr-underline-from-center">Price</a></li>
+                <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
+            </ul>
+        </nav>
+    <section class="landing-img"></section>
+    
+    <!-- Script for responsive nav bar -->
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team" class="w3-bar-item w3-button">Toucans 8</a>
-            <a href="#work" class="w3-bar-item w3-button">Work</a>
-            <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-    </div>
-    <!-- Image Header -->
-    <div class="w3-display-container w3-animate-opacity"
-        data-sal-duration="1200" 
-        data-sal="fade" 
-        data-sal-delay="300" 
-        data-sal-easing="ease-out-bounce"
-    >
-        <img src="assets/img/13.jpg" class="header-logo fade-in" alt="boat"
-            style="width:100%;min-height:350px;max-height:600px;">
-        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-            <button onclick="document.getElementById('id01').style.display='block'"
-                class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Toucans 8</button>
-        </div>
-    </div>
-    <!-- <div id="brief">
-        <p>We're a team of code sharks spitting up codes to solve your business needs</p>   
-    </div> -->
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+            $('.menu-icon').on("click", function() {
+                $("nav ul").toggleClass("showing");
+            })
+        })
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+    </script>
+   
+
     <!-- Team -->
     <div class="about-us">
         <div class="container text-center" id="team">
@@ -99,35 +113,6 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-	
-        $(function() {
-    
-            var GammaSettings = {
-                    // order is important!
-                    viewport : [ {
-                        width : 1200,
-                        columns : 5
-                    }, {
-                        width : 900,
-                        columns : 4
-                    }, {
-                        width : 500,
-                        columns : 3
-                    }, { 
-                        width : 320,
-                        columns : 2
-                    }, { 
-                        width : 0,
-                        columns : 2
-                    } ]
-            };
-    
-            Gamma.init( GammaSettings );
-    
-        });
-    
-    </script>
     <!-- Work -->
     <div class="work" id="work">
         <div class="container">
@@ -396,17 +381,6 @@
     </button>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="/assets/js/page.js"></script>
     <script>
         window.onscroll = () => {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
