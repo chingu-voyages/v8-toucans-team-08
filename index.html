@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i|Open+Sans|Lato:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900|Open+Sans:800" rel="stylesheet">
+
 
 </head>
 
@@ -50,7 +52,11 @@ crossorigin="anonymous"></script>
                 <li><a href="#contact" class="hvr-underline-from-center">Contact</a></li>
             </ul>
         </nav>
-    <section class="landing-img"></section>
+    <section class="landing-cont">
+        <div class="landing-img">
+            <img src="/assets/img/nav-logo.jpeg" alt="">
+        </div>
+    </section>
     
     <!-- Script for responsive nav bar -->
 
@@ -104,8 +110,8 @@ crossorigin="anonymous"></script>
             data-sal-delay="300" 
             data-sal-easing="ease-out-bounce"
         > -->
-            <h2>OUR TEAM</h2><br>
-            <p>Meet the team - Code Magic</p>
+            <h2 class="font-style-1">Meet the team <i class="fa fa-hand-o-down" aria-hidden="true"></i></h2><br>
+          
             <ul class="ch-grid">
                 <li>
                     <div class="ch-item ch-img-1">
@@ -151,7 +157,7 @@ crossorigin="anonymous"></script>
                         <img src="assets/img/company-2.png" class="bd-placeholder-img card-img-top resize">
                         <div class="card-body">
                             <p class="card-text">
-                                <h4><strong>Kiwano Inc</strong></h4>
+                                <h4 class="font-ital"><strong>Kiwano Inc</strong></h4>
                                 <section class="align-txt">As a new startup, we needed to outsource most of our web components. We had a few companies, but none
                                     met our satisfaction. Just a year ago, we came across Toucans 8, and our story from there is an open book. Everyone can testify
                                     of the successes we've chalked since then. Honestly, we owe it all to Toucans 8 Web Solutions. </section>
@@ -164,7 +170,7 @@ crossorigin="anonymous"></script>
                         <img src="assets/img/company-1.png" class="bd-placeholder-img card-img-top resize resize-2">
                         <div class="card-body">
                             <p class="card-text">
-                                <h4><strong>Company Name I/O</strong></h4>
+                                <h4 class="font-ital"><strong>Company Name I/O</strong></h4>
                                 <section class="align-txt">As a business that deals with Company name registration and all other issues relating to Brands and identity, it is imperative that we use trusted 3rd Party services. No other company provides Web Solutions better than Toucans 8. They've helped
                                     us stabilize our internet presence and increased our productivity. 
                                 </section>
@@ -177,7 +183,7 @@ crossorigin="anonymous"></script>
                         <img src="assets/img/company-3.png" class="bd-placeholder-img card-img-top resize-3">
                         <div class="card-body">
                             <p class="card-text">
-                                <h4><strong>Emerging Tech Hub</strong></h4>
+                                <h4 class="font-ital"><strong>Emerging Tech Hub</strong></h4>
                                 <section class="align-txt">We understand that true creativity and impact comes from relationships between our team members and client team.
                                      The real impact comes when we work closely with other service providers to provide tailored solutions to our clients.
                                      This is why we rely on Toucans 8 to be our long-term technology partner.
@@ -192,121 +198,116 @@ crossorigin="anonymous"></script>
         </div>
     </div>
     <!-- Pricing -->
-    <div class="container text-center" id="pricing"
-        data-sal-duration="1800" 
-        data-sal="slide-up" 
-        data-sal-delay="200" 
+    <!-- <div id="pricing"
+        data-sal-duration="1500" 
+        data-sal="fade-in" 
+        data-sal-delay="100" 
         data-sal-easing="ease-out-bounce"
-    >
-        <h2> PRICING </h2><br>
-        <p>Choose a pricing plan that fits your needs.</p>
-        <div class="row">
-            <div class="col-md-4">
-
-                <ul class="list-group">
-                    <li class="list-group-item planner">
-                        Basic
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">10GB</span>
-                        Storage
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">10</span>
-                        Emails
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">10</span>
-                        Domains
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">Endless</span>
-                        Support
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge lrg">$ 10</span><br>
-                        <span class="light">per month</span>
-                    </li>
-                    <li class="list-group-item shade">
-                        <button class="btn">
-                            &#10003; Sign Up
-                        </button>
-                    </li>
-                </ul>
-
-
-
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item plan">
-                        Pro
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">25GB</span>
-                        Storage
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">25</span>
-                        Emails
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">25</span>
-                        Domains
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">Endless</span>
-                        Support
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge lrg">$ 25</span><br>
-                        <span class="light">per month</span>
-                    </li>
-                    <li class="list-group-item shade">
-                        <button class="btn">
-                            &#10003; Sign Up
-                        </button>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item planner">
-                        Premium
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">50GB</span>
-                        Storage
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">50</span>
-                        Emails
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">50</span>
-                        Domains
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge">Endless</span>
-                        Support
-                    </li>
-                    <li class="list-group-item">
-                        <span class="badge lrg">$ 50</span><br>
-                        <span class="light">per month</span>
-                    </li>
-                    <li class="list-group-item shade">
-                        <button class="btn">
-                            &#10003; Sign Up
-                        </button>
-                    </li>
-                </ul>
+    > -->
+        <div class="container text-center">
+            <h2 class="font-style-2"> PRICING </h2><br>
+            <p class="font-ital">Choose a pricing plan that fits your needs.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item planner">
+                            Basic
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">10GB</span>
+                            Storage
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">10</span>
+                            Emails
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">10</span>
+                            Domains
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">Endless</span>
+                            Support
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge lrg">$ 10</span><br>
+                            <span class="light font-ital">per month</span>
+                        </li>
+                        <li class="list-group-item shade">
+                            <button class="btn">
+                                &#10003; Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item plan">
+                            Pro
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">25GB</span>
+                            Storage
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">25</span>
+                            Emails
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">25</span>
+                            Domains
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">Endless</span>
+                            Support
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge lrg">$ 25</span><br>
+                            <span class="light font-ital">per month</span>
+                        </li>
+                        <li class="list-group-item shade">
+                            <button class="btn">
+                                &#10003; Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item planner">
+                            Premium
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">50GB</span>
+                            Storage
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">50</span>
+                            Emails
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">50</span>
+                            Domains
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">Endless</span>
+                            Support
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge lrg">$ 50</span><br>
+                            <span class="light font-ital">per month</span>
+                        </li>
+                        <li class="list-group-item shade">
+                            <button class="btn">
+                                &#10003; Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
         </div>
-
-    </div>
     </div>
 
     <!-- Contact Us-->
@@ -317,30 +318,32 @@ crossorigin="anonymous"></script>
                 <div class="col-md-5"
                     data-sal-duration="1200" 
                     data-sal="slide-right" 
-                    data-sal-delay="200" 
+                    data-sal-delay="100" 
                     data-sal-easing="ease-out-bounce"
                 >
                     <div class="info">
-                        <span class="contact-head">
-                            Contact Us
-                        </span>
+                        <div class="info">
+                            <span class="contact-head">
+                                Contact Us
+                            </span>
+                        </div>
+                        <h3>Address</h3>
+                        <p class="font-ital">Swing by for a cup of coffee, or whatever.</p>
+                        <ul class="list-group">
+                            <li class="contact-list">
+                                <i class="fa contact-icon">&#xf041;</i>
+                                Chingu, Everywhere
+                            </li>
+                            <li class="contact-list">
+                                <i class="fa contact-icon">&#xf095;</i>
+                                +00 1515151515
+                            </li>
+                            <li class="contact-list">
+                                <i class="fa contact-icon">&#xf003;</i>
+                                test@test.com
+                            </li>
+                        </ul>
                     </div>
-                    <h3>Address</h3>
-                    <p>Swing by for a cup of coffee, or whatever.</p>
-                    <ul class="list-group">
-                        <li class="contact-list">
-                            <i class="fa contact-icon">&#xf041;</i>
-                            Chingu, Everywhere
-                        </li>
-                        <li class="contact-list">
-                            <i class="fa contact-icon">&#xf095;</i>
-                            +00 1515151515
-                        </li>
-                        <li class="contact-list">
-                            <i class="fa contact-icon">&#xf003;</i>
-                            test@test.com
-                        </li>
-                    </ul>
                 </div>
                 <div class="col-md-7 white-container"
                     data-sal-duration="1200" 
@@ -375,7 +378,7 @@ crossorigin="anonymous"></script>
         <div class="container"
             data-sal-duration="1200" 
             data-sal="slide-down" 
-            data-sal-delay="200" 
+            data-sal-delay="100" 
             data-sal-easing="ease-out-bounce"
         >
             <h4>Follow Us</h4>
@@ -394,7 +397,7 @@ crossorigin="anonymous"></script>
             <a href="javascript:void(0)" class="footer-links">
                 <i class="fa fa-icon">&#xf0e1;</i>
             </a>
-            <p class="footer-txt"><a href="https://github.com/chingu-voyages/v8-toucans-team-08" target="_blank" class="a-txt">Check out</a> our Github journey</p>
+            <p class="footer-txt font-ital"><a href="https://github.com/chingu-voyages/v8-toucans-team-08" target="_blank" class="a-txt">Check out</a> our Github journey</p>
         </div>
     </div>
 
@@ -424,7 +427,7 @@ crossorigin="anonymous"></script>
 
     <script>
         sal({
-            threshold: 0.3,
+            threshold: 0.8,
             once: false,
         });
     </script>

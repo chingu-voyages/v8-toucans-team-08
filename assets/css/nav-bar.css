@@ -70,12 +70,14 @@ nav ul li a:hover
     text-decoration: none;
 } 
 
-section.landing-img {
+.landing-img {
     width: 100%;
-    height: 100vh;
-    background: url(/assets/img/nav-logo.jpeg);
-    background-size: cover;
+    height: auto;
+    /* background-size: cover; */
 }
+
+
+
 
 /* html, body {
     margin: 0;
