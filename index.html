@@ -376,24 +376,27 @@ crossorigin="anonymous"></script>
         </div>
     </div>
 
-    <button onclick="moveToTheTop()" id="myBtn" class="hvr-icon-float hvr-icon" title="Go to top">Top
+    <button  id="myBtn" class="hvr-icon-float hvr-icon" title="Go to top" onclick="moveToTheTop()">Top
         <i class="fa hvr-icon-float hvr-icon">&#xf0aa;</i>
     </button>
 
 
     <script>
-        window.onscroll = () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.addEventListener("scroll", myScroller);
+        function myScroller(){
+            if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
             document.getElementById("myBtn").style.display = "block";
             } else {
             document.getElementById("myBtn").style.display = "none";
             }
+
         }
 
         function moveToTheTop(){
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
     </script>
 
     <!-- sal.js -->
