@@ -1,7 +1,7 @@
 # v8-toucans-team-08
 Add-project-description-here | Voyage-8 | https://chingu.io/
 
-> **Tier 1 Project**
+> **Toucans 8 Web Solutions
 > - Landing Page for a Software Company(Toucans 8 Web Solutions) | https://toucans8websolutions.herokuapp.com/#
 
 Trello Boards are finally in, still working on it.
