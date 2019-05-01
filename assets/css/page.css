@@ -194,8 +194,6 @@ input.input-text {
     display: inline-block;
 }
 
-/* Need to come back to this, want to make icon change dark when item tag is in hover state */
-
 .footer-links:hover {
     background-color: #aaa9a9;
     transition: 0.3s;
