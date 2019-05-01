@@ -4,6 +4,10 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 } 
 
+.fa-bars {
+    color: #009688;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -73,10 +77,9 @@ nav ul li a:hover
 .landing-img {
     width: 100%;
     height: auto;
+    transition: .5s;
     /* background-size: cover; */
 }
-
-
 
 
 /* html, body {
@@ -205,4 +208,8 @@ nav ul li a {
         color: rgb(37, 37, 37);
         line-height: 20px;
     } 
+    .landing-img {
+        width: 100%;
+        height: auto;
+    }
 }

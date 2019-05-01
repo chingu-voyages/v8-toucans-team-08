@@ -1,7 +1,7 @@
 /* Media queries for mobile view:
 if you know a better alternative for these please transfer these to improved code */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .card-img-top {
         height: auto;
         max-width: 60%;
@@ -14,5 +14,23 @@ if you know a better alternative for these please transfer these to improved cod
     .rounded-circle{
         max-height: 50%;
         width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .white-container, .list-group {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 608px) {
+    .white-container, .card, .align-txt, .our-work, strong, .list-group {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
