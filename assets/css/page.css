@@ -13,7 +13,6 @@ h2 {
     font-family: 'Lato', sans-serif;
     text-align: left;
     padding-left: 8%;
-    height: 180px;
 }
 
 @media (max-width: 992px) and (min-width: 763px) {
@@ -89,7 +88,7 @@ h2 {
 }
 
 .container {
-    padding: 6.5rem 0rem;
+    padding: 3.5rem 0rem;
 }
 
 

@@ -39,7 +39,9 @@ if you know a better alternative for these please transfer these to improved cod
     .col-md-3.our-work {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .contact-head {
+        align-self: center;
     }
 }
 
